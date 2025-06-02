@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#head2{
+    background-color: chartreuse;
+}
+.head3{
+    background-color: darkgreen;
+}
+h4, h5, h6{
+    background-color: darkmagenta;
+}
+p{
+    font-size: 1.3rem;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+
+}
+div:hover{
+    background-color: aqua;
+}
+div:active{
+    background-color: yellowgreen;
+}
+div:active{
+    background-color: darkslategray;
+}
+input:focus{
+    background-color: aqua;
+}
+ul{
+    list-style: ;
+}
