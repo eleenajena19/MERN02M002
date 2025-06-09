@@ -127,13 +127,75 @@ console.log("Welcome");
 // }
 // console.log(a)
 
-let a=60
-console.log(a)
+// let a=60
+// console.log(a)
 
-a=40;
-console.log(a)
+// a=40;
+// console.log(a)
 
-a="y"
-console.log(a)
+// a="y"
+// console.log(a)
+
+//~Difference between beyween var, let, const
+
+//Redeclaration:
+// var=>possible
+// let=>not possible
+// const=>none
+
+//Reinitialization
+// var=>possible
+// let=>possible
+// const=>not possible
+
+//only declaration possible or not
+// var=>possible
+// let=>possible
+// const=>not possible
 
 
+//way of declaration and access
+//global declaration
+//var
+//local access: var =>access
+//block access: access
+//function access:access
+
+//let
+//local access: let =>access
+//block access: access
+//function access:access
+
+//const
+//local access:  =>possible
+//block access: access
+//function access:access
+
+
+
+//Block level Declaration
+//var
+// Local access:var=>possible
+// block access: access
+//function access:access
+
+//let
+// Local access:let=> not possible
+// block access: access
+//function access: not access
+
+//const
+//local access: const =>not possible
+//block access: access
+//function access: not access
+
+//Function level declaration
+//var
+// local access: =>not possible
+//block access:not possible
+//function access:access
+
+//let
+// local access: =>not possible
+//block access:not possible
+//function access:access
