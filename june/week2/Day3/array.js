@@ -81,4 +81,14 @@ console.log("Hello")
  console.log(arr2)
 
  console.log(arr2.includes(10));
+ console.log(arr2.reverse())
  
+
+ let comArr=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+ comArr.shift();
+ console.log(comArr);
+ comArr.splice(1,1,"Ola")
+ console.log(comArr)
+ comArr.push("Amazon")
+ console.log(comArr)
+
