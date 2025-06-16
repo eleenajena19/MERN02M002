@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gradient-to-br from-[#051010] via-[#061a16] to-[#050505] text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upstash Blog Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+ <!-- Navbar -->
+<nav class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+  <a href="#" class="flex items-center space-x-2">
+    <img src="images/upstash-icon-dark-bg.svg" alt="Upstash Logo" class="w-6 h-6">
+    <span class="text-xl font-bold text-green-400">upstash</span>
+  </a>
+  <div class="flex space-x-8 text-sm text-white/80 justify-center flex-1">
+    <a href="#" class="hover:text-white">Docs</a>
+    <a href="#" class="hover:text-white">Pricing</a>
+    <a href="#" class="text-white font-semibold bg-white/10 px-3 py-1 rounded-full">Blog</a>
+    <a href="#" class="hover:text-white">Company <span class="bg-green-600 text-xs px-1.5 rounded-full ml-1">4</span></a>
+    <a href="#" class="hover:text-white">Enterprise</a>
+    <a href="#" class="hover:text-white">Contact Us</a>
+  </div>
+  <button class="bg-green-600 text-black px-4 py-1 rounded-full font-medium text-sm">Login</button>
+</nav>
+
+<!-- Blog Header -->
+<section class="text-center py-12 px-4">
+  <h1 class="text-4xl font-bold mb-4">Blog</h1>
+  <p class="text-lg text-white/70">Articles and tutorials from Upstash and community.</p>
+
+  <!-- Tags -->
+  <div class="mt-6 flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+    <a href="#" class="bg-pink-900 px-4 py-1 rounded-full text-sm hover:opacity-80">AI</a>
+    <a href="#" class="bg-blue-900 px-4 py-1 rounded-full text-sm hover:opacity-80">Dev-Tools</a>
+    <a href="#" class="bg-yellow-700 px-4 py-1 rounded-full text-sm hover:opacity-80">Redis</a>
+    <a href="#" class="bg-green-800 px-4 py-1 rounded-full text-sm hover:opacity-80">Vector</a>
+    <a href="#" class="bg-purple-800 px-4 py-1 rounded-full text-sm hover:opacity-80">Llm</a>
+    <a href="#" class="bg-lime-800 px-4 py-1 rounded-full text-sm hover:opacity-80">Context7</a>
+    <a href="#" class="bg-fuchsia-900 px-4 py-1 rounded-full text-sm hover:opacity-80">Coding-Assistants</a>
+    <a href="#" class="bg-indigo-900 px-4 py-1 rounded-full text-sm hover:opacity-80">Workflow</a>
+    <a href="#" class="bg-orange-900 px-4 py-1 rounded-full text-sm hover:opacity-80">QStash</a>
+    <a href="#" class="bg-cyan-800 px-4 py-1 rounded-full text-sm hover:opacity-80">Messaging</a>
+    <a href="#" class="bg-red-900 px-4 py-1 rounded-full text-sm hover:opacity-80">Serverless</a>
+    <a href="#" class="bg-sky-900 px-4 py-1 rounded-full text-sm hover:opacity-80">Sre</a>
+  </div>
+</section>
+
+<!-- Blog Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 pb-20 max-w-6xl mx-auto">
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">How Serverless Workflows Actually Work?</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Mehmet Tokgöz</p><p class="text-xs">June 11, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">How Upstash Monitors 25+ Clusters Across the Globe</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Ilter Kavlak</p><p class="text-xs">May 20, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">Making Next.js Navigation Fast af</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Josh</p><p class="text-xs">May 14, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">F*ck Clean Code, You Need an Idea</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Josh</p><p class="text-xs">May 1, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">Increasing Limits for Upstash Redis</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Enes Akar</p><p class="text-xs">April 17, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">Build an AI Assistant with Dify and Upstash</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Elif Nur Deniz</p><p class="text-xs">April 14, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">How to Build LLM Streams That Survive Reconnects</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>OpenAI Dev</p><p class="text-xs">April 10, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/men/63.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">Context7 MCP: Up-to-Date Docs for Any Cursor Prompt</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Ravi Prakash</p><p class="text-xs">March 30, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">Optimizing Messaging Queues with QStash</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Sara Lee</p><p class="text-xs">March 18, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+
+  <a href="#" class="group bg-[#0f1a17] p-6 rounded-xl hover:bg-[#162823] hover:shadow-[0_0_15px_#00ffcc22] transition duration-300">
+    <h2 class="text-xl font-semibold mb-4 group-hover:scale-[1.02] group-hover:text-green-400 transition-all duration-300">Serverless Failover Strategies with Redis</h2>
+    <div class="flex items-center justify-between text-sm text-white/70">
+      <div><p>Kiran Kumar</p><p class="text-xs">March 5, 2025</p></div>
+      <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </a>
+</section>
+
+<!-- Show all posts button -->
+<div class="flex justify-center mt-10">
+  <button class="bg-green-500 text-black px-4 py-2 rounded-full hover:bg-green-600 transition">
+    Show all posts
+  </button>
+</div>
+
+<!-- Footer section -->
+<footer class="text-center text-white/60 text-sm mt-12 mb-10">
+  <div class="flex justify-center items-center mb-4">
+    <img src="images/upstash-icon-dark-bg.svg" alt="" class="w-5 h-5 mr-1">
+    <span class="font-semibold text-white">upstash</span>
+  </div>
+  <p>© 2025 Upstash, Inc. Based in California.</p>
+  <div class="mt-2 space-x-4">
+    <a href="#" class="hover:underline">Contact Us</a>
+    <a href="#" class="hover:underline">Privacy Policy</a>
+    <a href="#" class="hover:underline">Terms of Service</a>
+  </div>
+  <div class="mt-4">
+    <button class="bg-[#1d3e34] text-green-400 px-4 py-1 rounded-full">Status</button>
+  </div>
+  <p class="mt-4 text-xs text-white/40 max-w-xl mx-auto">
+    * Redis is a trademark of Redis Ltd. Any rights therein are reserved to Redis Ltd. Any use by Upstash is for referential purposes only and does not indicate any sponsorship, endorsement or affiliation between Redis and Upstash.
+  </p>
+  <p class="text-xs text-white/40 max-w-xl mx-auto">
+    ** Cloudflare, the Cloudflare logo, and Cloudflare Workers are trademarks and/or registered trademarks of Cloudflare, Inc. in the United States and other jurisdictions.
+  </p>
+</footer>
+
+</body>
+</html>
