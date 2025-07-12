@@ -1,68 +1,43 @@
-const mongoose=require("mongoose")
+const express=require("express");
+const connectDB=require("./db")
 
+const app=express();
 
-const connectDB= async ()=>{
+const router=express.Router()
 
-    try{
-        const connection=mongoose.connect("mongodb://127.0.0.1:27017/Mydatabase");
-        console.log("mongo DB Connected Sucessfully");
-        // userModel.insertOne({name:"Gobora",age:30,email:"gobora@gmail.com",password:"xyzgobi123"})
-        
-    //     const user=new userModel({
-    //         name:"Eleena",
-    //         age:22,
-    //         email:"eleena@gmail.com",
-    //         password:"123"
-    //     })
-    //    await user.save()
-       
-       
-    //     const data=await userModel.find();
-    //     console.log(data);
-        
-        await userModel.findByIdAndUpdate(
-            {_id:'686e19b7433a970b7c75c285'},
-            {name: 'Eleena',
-            age: 21,
-            email: 'eleena@gmail.com',
-            password: 'eleena@123'},
-    )
-    console.log("data updated");
-    await userModel.findByIdAndDelete(
-            {_id:'686e19b7433a970b7c75c285'})
+//connection method start
+connectDB()
 
-              console.log("data deleted");
-      
-            //   console.log("data saved");
-    }
-    catch(error)
-    {
-        console.log('error : ',error);
-        
-    }
+const port=8000;
+
+const validation=(req,res,next)=>{
+    console.log("Validation start");
+    next();
+}
+const auth=(req,res,next)=>{
+    console.log("Authentication start");
+    next();
 }
 
+// app.use(validation);
+// app.use(auth);
+// app.get("/",(req,res)=>{
+//     res.send("get method called");
+// })
 
-const userSchema=mongoose.Schema({
-    name:{
-        type:String,
-        required:true
-    },
-    age:{
-        type:Number,
-        required:true
-    },
-    email:{
-        type:String,
-        required:true
-    },
-    password:{
-        type:String,
-        required:true
-    }
+// app.post("/user",(req,res)=>{
+//     res.send("post method called")
+// })
+
+router.get("/",validation,auth,(req,res)=>{
+    res.send("get method called")
 })
 
+app.use("/api",router);
+router.post("/user",validation,auth,(req,res)=>{
+    res.send("post method called")
+})
 
-const userModel=mongoose.model("user",userSchema)
-module.exports=userModel
-module.exports=connectDB;
+app.listen(port,(req, res)=>{
+    console.log("Server is running on the port",port)
+})
